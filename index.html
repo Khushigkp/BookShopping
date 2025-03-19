@@ -7,115 +7,73 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <style type="text/css">
-        
         .welcome{
             padding: 40px;
             background-color:black;
             color: aliceblue;
-            
             font-size: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
-            
-
-
-            
         }
         .space{
             padding: 20px;
             background-color:white;
             color: rgb(21, 20, 20);
             font-size: 30px;
-           
             text-align:end;
-            
-
         }
-    body{
-        background-image: linear-gradient(to right, rgba(55, 10, 215, 0), rgb(78, 170, 236));
-
+        body{
+            background-image: linear-gradient(to right, rgba(55, 10, 215, 0), rgb(78, 170, 236));
         }
-        
         html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    
-           
-  
-
-
-}
-.photos{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 50px;
-    flex-wrap: wrap;
-    gap: 30px;
-}
-
-
-.explore{
-    padding:-20;
-}
-.foot{
-    margin-top: 150px;
-}
-        
-         
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .photos{
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 50px;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+        .explore{
+            padding:-20;
+        }
+        .foot{
+            margin-top: 150px;
+        }
         footer div{
             padding: 40px;
             background-color:black;
             color: aliceblue;
-            
             font-size: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
-            
-            
-
-
         } 
         img{
             transition: 3s;
         }
-        .photo1:hover{
-            transform:rotateY(180deg);
-
+        .photo1:hover, .photo2:hover, .photo3:hover, .photo4:hover{
+            transform: rotateY(180deg);
         }
-        .photo2:hover{
-            transform:rotateY(180deg);
-
-        }
-        .photo3:hover{
-            transform:rotateY(180deg);
-
-        }
-        .photo4:hover{
-            transform:rotateY(180deg);
-
-        }
-
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             .photos {
                 flex-direction: column;
                 align-items: center;
             }
-            
             .photos img {
                 width: 200px;
                 height: 320px;
             }
-            
             .foot {
                 margin-top: 50px;
             }
-
             .welcome, .space, footer div {
                 white-space: nowrap;
                 overflow: hidden;
@@ -123,32 +81,27 @@
                 padding: 20px;
             }
         }
-
     </style>
 </head>
-<body >
+<body>
 <header>
     <div class="welcome"> Welcome to Book Showcase</div>
     <div class="space"> 
-        
         <nav> <a href="#"> HOME</a></nav>
-     </div>
+    </div>
 </header>
-   
-   <section>
-<div class="photos"> 
-    
-  <a href="./book1.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/Ramayan%20final.jpg" height="400px" width="250px" class="photo1" alt="Ramayana"></a>
-  <a href="./Book2.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/alone.jpg" height="400px" width="250px" class="photo2" alt="Alone"> </a>
-  <a href="./book3.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/atomic%20habit%20final.jpg" height="400px" width="250px" class="photo3" alt="Atomic Habits"></a>
-  <a href="./book4.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/overthing%20final.jpg" height="400px" width="250px" class="photo4" alt="Overthinking"></a>
-</div>
+
+<section>
+    <div class="photos"> 
+        <a href="./book1.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/Ramayan%20final.jpg" height="400px" width="250px" class="photo1" alt="Ramayana"></a>
+        <a href="./book2.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/alone.jpg" height="400px" width="250px" class="photo2" alt="Atomic Habits"> </a>
+        <a href="./book3.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/atomic%20habit%20final.jpg" height="400px" width="250px" class="photo3" alt="Atomic Habits"></a>
+        <a href="./book4.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/overthing%20final.jpg" height="400px" width="250px" class="photo4" alt="Overthinking"></a>
+    </div>
 </section>
-   
+
 </body>
 <footer class="foot">
-    <div  class="bi bi-c-circle"> 2025 book showcase | All rights reserved
-    </div>
+    <div class="bi bi-c-circle"> 2025 book showcase | All rights reserved </div>
 </footer>
 </html>
-
