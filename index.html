@@ -7,101 +7,116 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
     <style type="text/css">
-        .welcome{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: linear-gradient(to right, rgba(55, 10, 215, 0), rgb(78, 170, 236));
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .welcome {
             padding: 40px;
-            background-color:black;
+            background-color: black;
             color: aliceblue;
             font-size: 30px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
-        .space{
+
+        .space {
             padding: 20px;
-            background-color:white;
+            background-color: white;
             color: rgb(21, 20, 20);
             font-size: 30px;
-            text-align:end;
+            text-align: end;
         }
-        body{
-            background-image: linear-gradient(to right, rgba(55, 10, 215, 0), rgb(78, 170, 236));
-        }
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-        }
-        .photos{
+
+        .photos {
             display: flex;
             justify-content: space-evenly;
             margin-top: 50px;
             flex-wrap: wrap;
             gap: 30px;
+            flex-grow: 1; /* Ensures content stretches, keeping the footer at the bottom */
         }
-        .explore{
-            padding:-20;
+
+        .explore {
+            padding: -20;
         }
-        .foot{
-            margin-top: 150px;
-        }
-        footer div{
-            padding: 40px;
-            background-color:black;
+
+        footer {
+            background-color: black;
             color: aliceblue;
-            font-size: 30px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        } 
-        img{
+            text-align: center;
+            font-size: 20px;
+            padding: 20px;
+            position: relative;
+            width: 100%;
+        }
+
+        img {
             transition: 3s;
         }
-        .photo1:hover, .photo2:hover, .photo3:hover, .photo4:hover{
+
+        .photo1:hover, .photo2:hover, .photo3:hover, .photo4:hover {
             transform: rotateY(180deg);
         }
+
         /* Mobile responsiveness */
         @media (max-width: 768px) {
             .photos {
                 flex-direction: column;
                 align-items: center;
             }
+
             .photos img {
                 width: 200px;
                 height: 320px;
             }
-            .foot {
-                margin-top: 50px;
-            }
-            .welcome, .space, footer div {
+
+            .welcome, .space, footer {
                 white-space: nowrap;
                 overflow: hidden;
-                font-size: 20px;
+                font-size: 18px;
+                padding: 15px;
+            }
+
+            footer {
+                position: relative; /* Fixes footer cut-off issue */
                 padding: 20px;
+                font-size: 18px;
             }
         }
     </style>
 </head>
 <body>
+
 <header>
     <div class="welcome"> Welcome to Book Showcase</div>
-    <div class="space"> 
-        <nav> <a href="#"> HOME</a></nav>
+    <div class="space">
+        <nav><a href="#"> HOME</a></nav>
     </div>
 </header>
 
 <section>
-    <div class="photos"> 
+    <div class="photos">
         <a href="./book1.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/Ramayan%20final.jpg" height="400px" width="250px" class="photo1" alt="Ramayana"></a>
-        <a href="./book2.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/alone.jpg" height="400px" width="250px" class="photo2" alt="Atomic Habits"> </a>
+        <a href="./book2.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/alone.jpg" height="400px" width="250px" class="photo2" alt="Atomic Habits"></a>
         <a href="./book3.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/atomic%20habit%20final.jpg" height="400px" width="250px" class="photo3" alt="Atomic Habits"></a>
         <a href="./book4.html"><img src="https://raw.githubusercontent.com/Khushigkp/images/main/overthing%20final.jpg" height="400px" width="250px" class="photo4" alt="Overthinking"></a>
     </div>
 </section>
 
-</body>
-<footer class="foot">
-    <div class="bi bi-c-circle"> 2025 book showcase | All rights reserved </div>
+<footer>
+    <div class="bi bi-c-circle"> 2025 Book Showcase | All rights reserved </div>
 </footer>
+
+</body>
 </html>
